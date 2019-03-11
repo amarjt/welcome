@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <title>welcome ~ amar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center;
+            background-size: cover;
+        }
+
+        div {
+            height: 100vh;
+            color: #fff;
+            flex-direction: column;
+        }
+
+        span {
+            display: block;
+            font-weight: 700;
+        }
+
+        .text1 {
+            font-size: 10rem;
+            margin-bottom: 0.5rem;
+            animation: text 3s ease;
+            letter-spacing: 0.5rem;
+            position: relative;
+        }
+
+        .text2 {
+            font-size: 5rem;
+            color: #fff;
+            animation: visible 3s ease infinite;
+            animation-delay: 3s;
+            visibility: hidden;
+        }
+
+        @keyframes text {
+            0% {
+                margin-bottom: -4rem;
+            }
+
+            30% {
+                letter-spacing: 2.5rem;
+                margin-bottom: -4rem;
+            }
+
+            85% {
+                letter-spacing: .5rem;
+                margin-bottom: -4rem;
+            }
+        }
+
+        @keyframes visible{
+            from{
+                visibility: visible;
+            }
+            to{
+                visibility: visible;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center text-shadow">
+        <h1>
+            <span class="display-1 text1 text-center">welcome</span>
+            <span class="font-weight-bold text2 text-center mb-5">captain...</span>
+        </h1>
+        <p>click to visit the owlClock page...</p>
+        <a href="https://amarjt.github.io/owlClock/" class="btn btn-light">owlClock</a>
+    </div>
+</body>
+
+</html>
