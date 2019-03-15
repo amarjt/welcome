@@ -11,23 +11,26 @@
 
     <title>welcome ~ amar</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
 
-        body {
-            background: url(https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center;
+        #randomImage {
+            background: url(https://source.unsplash.com/1600x900/?desk,ui,ux,code,coffee,mac,laptop,pen) no-repeat center;
             background-size: cover;
             height: 100vh;
-            padding-top: 20vh;
+            width: 100vw;
         }
 
-        div {
-            height: 100%;
+        #content {
             color: #fff;
-            flex-direction: column;
+            text-shadow: 0px 0px 2px 2px #222;
+            position: absolute;
+            background: #07070773;
         }
 
         span {
@@ -37,8 +40,7 @@
         .text1 {
             font-size: 10rem;
             animation: text 3s ease;
-            letter-spacing: 0.5rem;
-            position: relative;
+            letter-spacing: 0.75rem;
         }
 
         .text2 {
@@ -53,33 +55,32 @@
             }
 
             30% {
-                letter-spacing: 2.5rem;
+                letter-spacing: 1.5rem;
                 margin-bottom: -4rem;
             }
 
             85% {
-                letter-spacing: .5rem;
+                letter-spacing: .25rem;
                 margin-bottom: -4rem;
             }
         }
 
-        @keyframes visible{
-            from{
+        @keyframes visible {
+            from {
                 visibility: visible;
             }
-            to{
+
+            to {
                 visibility: visible;
             }
         }
 
-        @media (max-width: 786px){
-            body{
-                padding-top: 40vh;
-            }
-            .display-1{
+        @media (max-width: 786px) {
+            .display-1 {
                 font-size: 1.5rem;
             }
-            .text2{
+
+            .text2 {
                 font-size: 3rem;
             }
         }
@@ -88,16 +89,18 @@
 </head>
 
 <body>
-    <div class="container h-100 text-center justify-content-center align-items-center d-flex">
+    <div id="randomImage"></div>
+    <div id="content" class="container-fluid h-100 text-center justify-content-center align-items-center d-flex">
         <div class="col-12">
             <h1>
                 <span class="display-1 text1 text-center">welcome</span>
                 <span class="font-weight-bold text2 text-center mb-5 invisible">captain...</span>
             </h1>
-            <p class="text-light">click to visit the owlClock page...</p>
+            <p class="">click to visit the owlClock page...</p>
             <a href="https://amarjt.github.io/owlClock/" class="btn btn-light">owlClock</a>
         </div>
     </div>
+
 </body>
 
 </html>
