@@ -45,7 +45,7 @@
 
         .text2 {
             font-size: 5rem;
-            animation: visible 3s ease infinite;
+            animation: visible 3s ease 1;
             animation-delay: 3s;
         }
 
@@ -66,11 +66,19 @@
         }
 
         @keyframes visible {
-            from {
-                visibility: visible;
-                opacity: 0.6;
+            0% {
+                visibility: hidden;
+                opacity: 0;
             }
-            to {
+            50% {
+                visibility: visible;
+                opacity: 0.5;
+            }
+            75% {
+                visibility: visible;
+                opacity: 0.75;
+            }
+            100% {
                 visibility: visible;
                 opacity: 1;
             }
@@ -95,7 +103,7 @@
         <div class="col-12">
             <h1>
                 <span class="display-1 text1 text-center">welcome</span>
-                <span class="font-weight-bold text2 text-center mb-5 invisible">captain...</span>
+                <span class="font-weight-bold text2 text-center mb-5">captain...</span>
             </h1>
             <p class="">click to visit the owlClock page...</p>
             <a href="https://amarjt.github.io/owlClock/" class="btn btn-light">owlClock</a>
