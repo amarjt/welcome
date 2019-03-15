@@ -66,12 +66,18 @@
         }
 
         @keyframes visible {
-            from {
+            0% {
                 visibility: visible;
+                opacity: 0.1;
             }
 
-            to {
+            50% {
                 visibility: visible;
+                opacity: 0.6;
+            }
+            100% {
+                visibility: visible;
+                opacity: 1;
             }
         }
 
