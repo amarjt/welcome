@@ -45,7 +45,7 @@
 
         .text2 {
             font-size: 5rem;
-            animation: visible 3s ease;
+            animation: visible 3s ease infinite;
             animation-delay: 3s;
         }
 
@@ -66,16 +66,11 @@
         }
 
         @keyframes visible {
-            0% {
-                visibility: visible;
-                opacity: 0.2;
-            }
-
-            50% {
+            from {
                 visibility: visible;
                 opacity: 0.6;
             }
-            100% {
+            to {
                 visibility: visible;
                 opacity: 1;
             }
